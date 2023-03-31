@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.calculator {
+  background-color: #f5f5f5;
+  border: 1px solid #5f5f5f;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #ccc;
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+}
+
+.display {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 24px;
+  padding: 10px;
+}
+
+button.clear {
+  background-color: #e91f09;
+  color: #fff;
+}
+
+button.backspace {
+  background-color: #f1c40f;
+  color: #fff;
+}
+
+button.equal {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: inset 0 0 5px #ccc;
+}
